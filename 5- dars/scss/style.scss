@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    padding: 1rem 0;
+    background: rgb(78,145,226);
+    background: linear-gradient(100deg, rgba(78,145,226,1) 35%, rgba(102,225,204,1) 100%);
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+    label {
+        margin-top: 10px;
+    }
+
+    input {
+        margin-bottom: 10px;
+        padding: 8px;
+        border-radius: 4px;
+        border: 1px solid #ced4da;
+    }
+
+    button {
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+}
+
+.alert {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+}
+
+.product-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.product-item:first-child {
+    background-color: #d4edda;
+}
+
+.product-item:last-child {
+    background-color: #f8d7da;
+}
+
+.delete-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 10px;
+
+    &:hover {
+        background-color: darkred;
+    }
+}
+
+#totalCost{
+    margin: 1rem 0;
+}
