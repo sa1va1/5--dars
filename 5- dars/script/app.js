@@ -10,6 +10,8 @@ document.getElementById('productForm').addEventListener('submit', function(e) {
     let newProduct = { name, amount, price }
     products.push(newProduct)
 
+    document.getElementById('productForm').reset()
+
     localStorage.setItem('products', JSON.stringify(products))
     displayProducts()
     calculateTotalCost()
